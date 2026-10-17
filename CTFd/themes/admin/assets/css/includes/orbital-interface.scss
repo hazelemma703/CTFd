@@ -1,0 +1,417 @@
+:root {
+  color-scheme: dark;
+  --ops-ink: #080c12;
+  --ops-ink-raised: #0d141d;
+  --ops-panel: #111b27;
+  --ops-panel-strong: #172434;
+  --ops-blue: #93bdf1;
+  --ops-blue-bright: #c2ddff;
+  --ops-blue-dim: #6689b0;
+  --ops-green: #66d9a6;
+  --ops-line: rgba(142, 177, 214, 0.2);
+  --ops-copy: #d9e6f4;
+  --ops-muted: #a2b2c5;
+}
+
+html,
+body {
+  min-height: 100%;
+  background: var(--ops-ink);
+  color: var(--ops-copy);
+}
+
+body {
+  position: relative;
+  isolation: isolate;
+  background-image: radial-gradient(ellipse at 50% 4%, rgba(46, 82, 125, 0.16), transparent 39rem);
+  font-family: "Lato", "LatoOffline", sans-serif;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+::selection {
+  background: rgba(112, 168, 228, 0.38);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 0.7rem;
+  height: 0.7rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #080c12;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 2px solid #080c12;
+  border-radius: 1rem;
+  background: #344b65;
+}
+
+.orbit-field {
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.62;
+}
+
+main,
+.footer {
+  position: relative;
+}
+
+main {
+  min-height: calc(100vh - 5rem);
+  padding-top: 4.6rem;
+}
+
+.navbar.fixed-top {
+  min-height: 4.25rem;
+  border-bottom: 1px solid var(--ops-line);
+  background: rgba(7, 11, 16, 0.97) !important;
+  box-shadow: 0 0.7rem 2rem rgba(0, 0, 0, 0.25);
+}
+
+.navbar .container {
+  max-width: 1440px;
+}
+
+.navbar-brand {
+  color: var(--ops-blue-bright) !important;
+  font-family: "Raleway", "RalewayOffline", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+}
+
+.navbar .nav-link {
+  color: #c2d0df !important;
+  font-size: 0.86rem;
+  transition: color 140ms ease, background-color 140ms ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link.active {
+  color: var(--ops-blue-bright) !important;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--ops-blue);
+  outline-offset: 3px;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus {
+  border-color: var(--ops-line);
+}
+
+.dropdown-menu {
+  border: 1px solid var(--ops-line);
+  border-radius: 0.55rem;
+  background: var(--ops-ink-raised);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-item {
+  color: var(--ops-copy);
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background: var(--ops-panel-strong);
+  color: #fff;
+}
+
+.container,
+.container-fluid {
+  color: var(--ops-copy);
+}
+
+h1,
+h2,
+h3,
+h4,
+.modal-title {
+  color: #e4effc;
+  font-family: "Raleway", "RalewayOffline", sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+a {
+  color: var(--ops-blue);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  color: var(--ops-blue-bright);
+}
+
+.card,
+.modal-content,
+.list-group-item {
+  border-color: var(--ops-line);
+  border-radius: 0.55rem;
+  background-color: rgba(13, 20, 29, 0.96);
+  color: var(--ops-copy);
+}
+
+.card-header,
+.card-footer {
+  border-color: var(--ops-line);
+  background-color: rgba(25, 39, 55, 0.68);
+  color: #dce9f7;
+}
+
+.form-control,
+.custom-select,
+input,
+select,
+textarea {
+  border-color: #34485e !important;
+  border-radius: 0.4rem !important;
+  background-color: #0a1119 !important;
+  color: #e2edf9 !important;
+}
+
+.form-control::placeholder,
+input::placeholder,
+textarea::placeholder {
+  color: #a2b2c5 !important;
+  opacity: 1;
+}
+
+.form-control:focus,
+.custom-select:focus,
+input:focus,
+textarea:focus {
+  border-color: var(--ops-blue) !important;
+  box-shadow: 0 0 0 0.2rem rgba(120, 171, 227, 0.18) !important;
+}
+
+.btn {
+  min-height: 2.65rem;
+  border-radius: 0.4rem;
+  font-weight: 700;
+  transition: transform 150ms ease, background-color 150ms ease, border-color 150ms ease;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn-primary,
+.btn-info {
+  border-color: #87b6eb !important;
+  background: #87b6eb !important;
+  color: #07111c !important;
+}
+
+.btn-primary:hover,
+.btn-info:hover {
+  border-color: #b5d5f7 !important;
+  background: #b5d5f7 !important;
+  color: #07111c !important;
+}
+
+.btn-success,
+.badge-success {
+  border-color: var(--ops-green) !important;
+  background: var(--ops-green) !important;
+  color: #062015 !important;
+}
+
+.table {
+  border-color: var(--ops-line);
+  color: var(--ops-copy);
+}
+
+.table th,
+.table td {
+  border-color: var(--ops-line) !important;
+}
+
+.table thead th {
+  color: #bcd3eb;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(28, 43, 60, 0.48);
+}
+
+tbody tr:hover {
+  background-color: rgba(54, 78, 105, 0.42) !important;
+}
+
+.jumbotron {
+  border-bottom: 1px solid var(--ops-line);
+  border-radius: 0;
+  background: transparent;
+  color: var(--ops-copy);
+}
+
+.section-title {
+  border-color: var(--ops-line);
+  color: #b5c9df;
+}
+
+.modal-content {
+  background: #0d151f;
+  box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.46);
+}
+
+.modal-header,
+.modal-footer {
+  border-color: var(--ops-line);
+}
+
+.alert-info {
+  border-color: rgba(131, 184, 238, 0.3);
+  background: rgba(43, 76, 111, 0.36);
+  color: #d5e9ff;
+}
+
+.alert-success {
+  border-color: rgba(102, 217, 166, 0.4);
+  background: rgba(26, 82, 60, 0.36);
+  color: #c7f5df;
+}
+
+.alert-danger {
+  border-color: rgba(236, 125, 130, 0.38);
+  background: rgba(108, 42, 49, 0.34);
+  color: #ffd7d8;
+}
+
+.footer {
+  padding: 1rem 0 1.5rem;
+  color: var(--ops-muted);
+}
+
+.text-muted,
+.text-secondary {
+  color: var(--ops-muted) !important;
+}
+
+/* Neon-glass surfaces and angular controls, tuned to the shared orbital-blue palette. */
+.navbar.fixed-top {
+  background: linear-gradient(105deg, rgba(7, 11, 16, 0.98), rgba(13, 25, 39, 0.94)) !important;
+  backdrop-filter: blur(16px) saturate(135%);
+}
+
+.card,
+.modal-content,
+.dropdown-menu,
+.list-group-item {
+  border-color: rgba(147, 189, 241, 0.24);
+  background-image: linear-gradient(145deg, rgba(31, 53, 77, 0.48), rgba(9, 15, 23, 0.96) 62%);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.24), inset 0 1px rgba(194, 221, 255, 0.07);
+  backdrop-filter: blur(14px) saturate(125%);
+}
+
+.card-header,
+.card-footer {
+  background: linear-gradient(100deg, rgba(39, 67, 98, 0.58), rgba(19, 31, 46, 0.76));
+}
+
+.btn-primary,
+.btn-info,
+.btn-outlined {
+  position: relative;
+  border-color: rgba(194, 221, 255, 0.68);
+  background-image: linear-gradient(115deg, #668fbe, #93bdf1 56%, #c2ddff);
+  box-shadow: 0 6px 20px rgba(81, 140, 204, 0.22), inset 0 1px rgba(255, 255, 255, 0.34);
+  transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+}
+
+.btn-primary:hover,
+.btn-info:hover,
+.btn-outlined:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(81, 140, 204, 0.34), inset 0 1px rgba(255, 255, 255, 0.42);
+  filter: brightness(1.08);
+}
+
+.btn-primary,
+.btn-info {
+  color: #07111c !important;
+}
+
+.btn-success {
+  border-color: rgba(151, 244, 198, 0.62);
+  background-image: linear-gradient(115deg, #16855a, #66d9a6 58%, #b5f1d3);
+  color: #062015 !important;
+}
+
+.btn-success:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(48, 175, 120, 0.3), inset 0 1px rgba(255, 255, 255, 0.42);
+}
+
+.form-control,
+.custom-select,
+input,
+select,
+textarea {
+  background-image: linear-gradient(145deg, rgba(27, 45, 65, 0.62), rgba(8, 14, 21, 0.94));
+  box-shadow: inset 0 1px rgba(194, 221, 255, 0.06);
+}
+
+.form-control:focus,
+.custom-select:focus {
+  box-shadow: 0 0 0 1px rgba(194, 221, 255, 0.35), 0 0 24px rgba(102, 157, 218, 0.19);
+}
+
+@supports (clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)) {
+  .btn-primary,
+  .btn-info,
+  .btn-outlined {
+    clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+  }
+}
+
+@media (max-width: 767.98px) {
+  main {
+    padding-top: 4.1rem;
+  }
+
+  .navbar-collapse {
+    max-height: calc(100vh - 4.4rem);
+    overflow-y: auto;
+  }
+
+  .navbar .nav-link {
+    min-height: 2.75rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .orbit-field {
+    opacity: 0.38;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .btn:active {
+    transform: none;
+  }
+}

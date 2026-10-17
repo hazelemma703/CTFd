@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-17T14:57:54Z",
+  "title": "Design System: Cyber Fest CTF",
+  "extensions": {
+    "colorMeta": {
+      "primary": { "role": "primary", "displayName": "Orbital Action", "purpose": "Filled primary and informational actions; action text stays dark for contrast.", "tonalRamp": ["#101a25", "#203247", "#365475", "#527aa5", "#87b6eb", "#a2c7f0", "#c1daf6", "#e4f0fc"] },
+      "primary-hover": { "role": "primary", "displayName": "Action Hover", "purpose": "Hover emphasis on filled actions.", "tonalRamp": ["#15202c", "#293b50", "#425e7c", "#6387ae", "#91b8e5", "#b5d5f7", "#cee2fa", "#e9f3fd"] },
+      "signal-link": { "role": "primary", "displayName": "Orbital Link", "purpose": "Links, focus outlines, values, and active controls.", "tonalRamp": ["#111a24", "#26374a", "#3c5878", "#5d7fa6", "#93bdf1", "#aecbf3", "#c9ddf7", "#e8f2fc"] },
+      "signal-highlight": { "role": "primary", "displayName": "Signal Highlight", "purpose": "Headings, brand text, and high-priority navigation.", "tonalRamp": ["#182331", "#30445c", "#4c6b8b", "#7193b8", "#a1c2e8", "#c2ddff", "#d8e9fb", "#eff7ff"] },
+      "signal-distant": { "role": "secondary", "displayName": "Distant Signal", "purpose": "Secondary challenge markers and low-emphasis signal details.", "tonalRamp": ["#121920", "#273543", "#3b526a", "#536f8d", "#6689b0", "#88a4c3", "#b0c1d4", "#dce5ee"] },
+      "success-capture": { "role": "tertiary", "displayName": "Captured Green", "purpose": "Solved challenges and successful submissions only.", "tonalRamp": ["#09251a", "#12452f", "#216b49", "#399565", "#66d9a6", "#8de5bc", "#b5f0d2", "#e4faef"] },
+      "status-warning": { "role": "tertiary", "displayName": "Warning Amber", "purpose": "Warning feedback.", "tonalRamp": ["#2b2010", "#503b1c", "#7a5b2d", "#b08b4e", "#e6bd78", "#edcf9b", "#f5e0bf", "#fcf3e4"] },
+      "status-error": { "role": "tertiary", "displayName": "Alert Red", "purpose": "Error and invalid-input feedback.", "tonalRamp": ["#2b1013", "#541f24", "#81333a", "#b9535b", "#ec7d82", "#f19da0", "#f7c1c3", "#fde9e9"] },
+      "neutral-bg": { "role": "neutral", "displayName": "Void", "purpose": "Dark page and browser surface.", "tonalRamp": ["#080c12", "#101821", "#1b2734", "#2a3949", "#43576b", "#6b7f92", "#a0afbd", "#e5ebf0"] },
+      "neutral-raised": { "role": "neutral", "displayName": "Raised Void", "purpose": "Dropdown, dialog, and elevated work surface.", "tonalRamp": ["#0d141d", "#17212d", "#253344", "#384d63", "#526d88", "#7f94a9", "#b0bdc9", "#e8edf2"] },
+      "neutral-panel": { "role": "neutral", "displayName": "Operations Panel", "purpose": "Cards and compact work areas.", "tonalRamp": ["#111b27", "#1b2938", "#2a3b4e", "#3c536b", "#58728d", "#8295a8", "#b2bfca", "#e9edf1"] },
+      "neutral-panel-strong": { "role": "neutral", "displayName": "Panel Lift", "purpose": "Hover, selected, and table-row surfaces.", "tonalRamp": ["#172434", "#223449", "#334b64", "#496784", "#6684a2", "#8ea3b7", "#bcc8d3", "#edf1f4"] },
+      "neutral-copy": { "role": "neutral", "displayName": "Mission Copy", "purpose": "Primary text and body copy.", "tonalRamp": ["#17212b", "#293746", "#405367", "#5c7289", "#7f97ae", "#a3b5c6", "#c2d0dc", "#d9e6f4"] },
+      "neutral-muted": { "role": "neutral", "displayName": "Telemetry Muted", "purpose": "Supporting text, placeholders, and metadata.", "tonalRamp": ["#1b252f", "#303e4c", "#495a6b", "#65798d", "#8298ad", "#a2b2c5", "#bfccd8", "#e7edf2"] },
+      "neutral-line": { "role": "neutral", "displayName": "Signal Border", "purpose": "Table structure, card edges, and separators.", "tonalRamp": ["rgba(142,177,214,.2)", "rgba(142,177,214,.2)", "rgba(142,177,214,.2)", "rgba(142,177,214,.2)", "rgba(142,177,214,.2)", "rgba(142,177,214,.2)", "rgba(142,177,214,.2)", "rgba(142,177,214,.2)"] },
+      "light-neutral-bg": { "role": "neutral", "displayName": "Sky Ground", "purpose": "Participant light-mode page surface.", "tonalRamp": ["#101b27", "#233448", "#3b536d", "#607d9a", "#8faac4", "#b8cbdc", "#d2dfeb", "#eaf1f8"] },
+      "light-neutral-raised": { "role": "neutral", "displayName": "Cloud Surface", "purpose": "Participant light-mode raised surfaces.", "tonalRamp": ["#182331", "#30445a", "#4e6883", "#7891a9", "#a6b8c9", "#c8d5e0", "#e0e8ef", "#f6f9fc"] },
+      "light-neutral-panel": { "role": "neutral", "displayName": "Ice Panel", "purpose": "Participant light-mode cards and dialogs.", "tonalRamp": ["#162230", "#2e435a", "#4b6682", "#7590aa", "#a3b7c9", "#c6d4e0", "#dce7f0", "#f4f8fc"] },
+      "light-neutral-panel-strong": { "role": "neutral", "displayName": "Panel Selection", "purpose": "Participant light-mode selected and hover surfaces.", "tonalRamp": ["#152131", "#2a4059", "#455f7c", "#6c87a3", "#9eb4c9", "#bfd0df", "#d4e1ec", "#e6eef7"] },
+      "light-primary": { "role": "primary", "displayName": "Deep Orbital Blue", "purpose": "Participant light-mode links and actions.", "tonalRamp": ["#0d1e30", "#19344f", "#285174", "#376b9f", "#5d8ab6", "#86a7c7", "#b1c8dc", "#e2edf7"] },
+      "light-primary-hover": { "role": "primary", "displayName": "Deep Highlight", "purpose": "Participant light-mode high-priority text and action hover.", "tonalRamp": ["#0a1625", "#112b46", "#173b61", "#3c5c7c", "#6886a4", "#94abc1", "#c0cfdd", "#e7eef5"] },
+      "light-signal-distant": { "role": "secondary", "displayName": "Light Distant Signal", "purpose": "Participant light-mode secondary details.", "tonalRamp": ["#17212b", "#2d3d4e", "#465c72", "#607f9f", "#829bb2", "#a5b7c8", "#c5d2de", "#e9eef3"] },
+      "light-success-capture": { "role": "tertiary", "displayName": "Light Capture Green", "purpose": "Participant light-mode solved and successful states.", "tonalRamp": ["#09291c", "#105139", "#126c49", "#16855a", "#45a079", "#79b89a", "#add2be", "#e0f1e8"] },
+      "light-neutral-copy": { "role": "neutral", "displayName": "Light Mission Copy", "purpose": "Participant light-mode primary text.", "tonalRamp": ["#162738", "#2c4052", "#465b70", "#627b91", "#8197aa", "#a1b2c0", "#c1ccd5", "#e7edf1"] },
+      "light-neutral-muted": { "role": "neutral", "displayName": "Light Telemetry", "purpose": "Participant light-mode secondary text.", "tonalRamp": ["#1c2934", "#344554", "#516578", "#718396", "#91a1b0", "#afbbc6", "#cbd3da", "#edf1f4"] },
+      "light-neutral-line": { "role": "neutral", "displayName": "Light Signal Border", "purpose": "Participant light-mode borders and separators.", "tonalRamp": ["rgba(27,60,94,.2)", "rgba(27,60,94,.2)", "rgba(27,60,94,.2)", "rgba(27,60,94,.2)", "rgba(27,60,94,.2)", "rgba(27,60,94,.2)", "rgba(27,60,94,.2)", "rgba(27,60,94,.2)"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Raleway", "purpose": "Page and section headings.", "source": "Bundled Raleway and RalewayOffline font faces." },
+      "body": { "displayName": "Lato", "purpose": "Running text, forms, tables, navigation, and admin records.", "source": "Bundled Lato and LatoOffline font faces." }
+    },
+    "motion": [
+      { "name": "orbital-drift", "value": "Canvas sphere with randomized orbital speeds, phase drift, and twinkle", "purpose": "Carry the supplied particle reference behind participant and admin content; the shared initializer draws a static frame for reduced motion and pauses while the document is hidden." },
+      { "name": "control-feedback", "value": "140–160ms ease; buttons press down 1px and challenge targets lift 2px", "purpose": "Give direct, quick feedback on interactive controls." }
+    ],
+    "breakpoints": [
+      { "name": "navigation-collapse", "value": "767.98px" },
+      { "name": "challenge-target-compact", "value": "767.98px" }
+    ],
+    "narrative": {
+      "northStar": "Orbital Signal Intercept",
+      "overview": "This visual system frames a cybersecurity competition as an operations environment. Near-black surfaces, orbital-blue signals, and the animated particle field adapt the supplied reference to CTFd's challenge and scoreboard workflows. Raleway carries display headings; Lato keeps dense competition and administration content readable.\n\nThe participant theme and CTFd's separate admin theme share the dark palette, typography, and particle-field implementation. The participant theme also supports a light color mode; the admin theme currently uses the dark palette. Existing CTFd content, routes, and behavior remain the source of truth. The Halo inspiration informs atmosphere only; the system does not use Halo names, logos, characters, or game artwork.",
+      "keyCharacteristics": [
+        "Near-black operational surfaces with pale orbital-blue actions and links.",
+        "A low-contrast canvas particle sphere animates behind page content.",
+        "Green is reserved for captured challenges and successful submissions.",
+        "Amber and red communicate warning and error states.",
+        "Participant and admin screens share the dark visual language; only participants have the documented light palette."
+      ],
+      "rules": [
+        { "name": "The Capture State Rule", "body": "Green means a successful submission or solved challenge; it is not a general accent.", "section": "colors" },
+        { "name": "The Signal Contrast Rule", "body": "Primary action text stays dark against the filled blue action; links and focus indicators use the brighter signal colors.", "section": "colors" },
+        { "name": "The Two-Font Rule", "body": "Use Raleway for headings and Lato for interface and running text; avoid adding another display face.", "section": "typography" },
+        { "name": "The Quiet Orbit Rule", "body": "The particle field stays behind content, never captures pointer input, and never animates for users who request reduced motion.", "section": "elevation" }
+      ],
+      "dos": [
+        "Do use orbital blue for actions, links, active controls, and focus.",
+        "Do reserve green for captured or successful states.",
+        "Do keep the particle field quiet behind dense challenge and admin content.",
+        "Do preserve CTFd's translated strings, routes, plugin slots, and keyboard behaviors.",
+        "Do keep participant light mode consistent with its remapped blue-gray token roles."
+      ],
+      "donts": [
+        "Don't place the particle field at full opacity beneath text-heavy content.",
+        "Don't use Halo names, logos, characters, or game artwork as theme assets.",
+        "Don't use warning amber or error red as general decoration.",
+        "Don't replace established CTFd terminology with invented operational labels."
+      ]
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Filled blue action with dark text and quick press feedback.",
+      "html": "<button class=\"ds-btn-primary\">Submit flag</button>",
+      "css": ".ds-btn-primary { min-height: 2.65rem; padding: .55rem 1rem; border: 1px solid #87b6eb; border-radius: .4rem; background: #87b6eb; color: #07111c; font: 700 1rem Lato, sans-serif; transition: transform 150ms ease, background-color 150ms ease, border-color 150ms ease; } .ds-btn-primary:hover { border-color: #b5d5f7; background: #b5d5f7; } .ds-btn-primary:focus-visible { outline: 2px solid #93bdf1; outline-offset: 3px; } .ds-btn-primary:active { transform: translateY(1px); }"
+    },
+    {
+      "name": "Secondary Action",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Outlined action for a secondary task.",
+      "html": "<button class=\"ds-btn-outline\">View scoreboard</button>",
+      "css": ".ds-btn-outline { min-height: 2.65rem; padding: .55rem 1rem; border: 1px solid #93bdf1; border-radius: .4rem; background: transparent; color: #c2ddff; font: 700 1rem Lato, sans-serif; transition: background-color 150ms ease, border-color 150ms ease; } .ds-btn-outline:hover { background: rgba(124, 174, 230, .16); color: #fff; } .ds-btn-outline:focus-visible { outline: 2px solid #93bdf1; outline-offset: 3px; }"
+    },
+    {
+      "name": "Operations Panel",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Graphite container for challenge and competition content.",
+      "html": "<article class=\"ds-panel\"><h3>Challenge title</h3><p>Challenge description and score.</p></article>",
+      "css": ".ds-panel { padding: 1rem; border: 1px solid rgba(142, 177, 214, .2); border-radius: .55rem; background: #111b27; color: #d9e6f4; font: 400 1rem/1.55 Lato, sans-serif; } .ds-panel h3 { margin: 0 0 .5rem; color: #e4effc; font: 600 1.3rem/1.15 Raleway, sans-serif; letter-spacing: -.025em; } .ds-panel p { margin: 0; }"
+    },
+    {
+      "name": "Challenge Target",
+      "kind": "custom",
+      "refersTo": "challenge-target",
+      "description": "Interactive challenge target; solved state switches to capture green.",
+      "html": "<button class=\"ds-challenge\"><strong>Orbital relay</strong><span>250 points</span></button>",
+      "css": ".ds-challenge { display: flex; min-height: 8rem; width: 100%; flex-direction: column; justify-content: space-between; padding: 1rem; border: 1px solid #30465e; border-radius: .55rem; background: #0f1823; color: #d9e6f4; text-align: left; transition: border-color 160ms ease, background-color 160ms ease, transform 160ms ease; } .ds-challenge:hover { transform: translateY(-2px); border-color: #93bdf1; background: #172434; } .ds-challenge:focus-visible { outline: 2px solid #93bdf1; outline-offset: 3px; } .ds-challenge span { color: #93bdf1; } .ds-challenge.is-solved { border-color: rgba(102, 217, 166, .75); background: rgba(19, 54, 45, .9); color: #d4f7e6; } .ds-challenge.is-solved span { color: #66d9a6; }"
+    },
+    {
+      "name": "Dark Field Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Inset form field with visible orbital-blue focus feedback.",
+      "html": "<label class=\"ds-field-label\">Flag<input class=\"ds-input\" placeholder=\"CTF{...}\"></label>",
+      "css": ".ds-field-label { display: grid; gap: .5rem; color: #d9e6f4; font: 700 .9rem Lato, sans-serif; } .ds-input { min-height: 2.65rem; padding: .55rem .75rem; border: 1px solid #34485e; border-radius: .4rem; background: #0a1119; color: #e2edf9; font: 400 1rem Lato, sans-serif; } .ds-input::placeholder { color: #a2b2c5; opacity: 1; } .ds-input:focus { border-color: #93bdf1; box-shadow: 0 0 0 .2rem rgba(120, 171, 227, .18); outline: none; } .ds-input:focus-visible { outline: 2px solid #93bdf1; outline-offset: 2px; }"
+    },
+    {
+      "name": "Fixed Navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Near-black fixed navigation with a signal-highlight active link.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-brand\" href=\"#\">Cyber Fest</a><a class=\"ds-nav-link\" href=\"#challenges\">Challenges</a><a class=\"ds-nav-link is-active\" href=\"#scoreboard\">Scoreboard</a></nav>",
+      "css": ".ds-nav { display: flex; min-height: 4.25rem; align-items: center; gap: 1.5rem; padding: 0 1rem; border-bottom: 1px solid rgba(142, 177, 214, .2); background: #080c12; color: #c2d0df; font: 400 .9rem Lato, sans-serif; } .ds-brand { margin-right: auto; color: #c2ddff; font: 700 1rem Raleway, sans-serif; letter-spacing: .075em; text-decoration: none; text-transform: uppercase; } .ds-nav-link { color: #c2d0df; text-decoration: none; } .ds-nav-link:hover, .ds-nav-link:focus-visible, .ds-nav-link.is-active { color: #c2ddff; } .ds-brand:focus-visible, .ds-nav-link:focus-visible { outline: 2px solid #93bdf1; outline-offset: 3px; }"
+    }
+  ]
+}

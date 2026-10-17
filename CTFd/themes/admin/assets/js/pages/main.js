@@ -1,4 +1,5 @@
 import CTFd from "../compat/CTFd";
+import "../../../../cyber-fest/assets/js/theme/orbit-field";
 import Alpine from "alpinejs";
 import $ from "jquery";
 import dayjs from "dayjs";

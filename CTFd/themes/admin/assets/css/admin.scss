@@ -1,4 +1,5 @@
 @import "includes/sticky-footer.css";
+@import "includes/orbital-interface.scss";
 
 .section-title {
   border-top: 1px solid lightgray;
@@ -220,4 +221,48 @@ th.sticky-col-score {
   overflow-y: auto;
   border: 1px solid #dee2e6;
   background: white;
+}
+
+/* Keep admin-specific legacy rules inside the Cyber Fest visual system. */
+.section-title {
+  border-color: var(--ops-line);
+  color: #b5c9df;
+}
+
+.form-control:focus,
+.custom-select:focus,
+.card-radio:checked + .card {
+  border-color: var(--ops-blue) !important;
+  box-shadow: 0 0 0 0.18rem rgba(120, 171, 227, 0.2) !important;
+}
+
+.sticky-cell {
+  background-color: #0d141d !important;
+  color: var(--ops-copy);
+}
+
+.sticky-header,
+#matrix-scoreboard th {
+  background-color: #172434 !important;
+  color: #d9e6f4;
+}
+
+#matrix-scoreboard {
+  border-color: var(--ops-line);
+}
+
+#matrix-scoreboard th,
+#matrix-scoreboard td {
+  border-color: var(--ops-line);
+}
+
+.challenge-col {
+  background-color: #172434;
+  color: var(--ops-copy);
+}
+
+.filter-list {
+  border-color: var(--ops-line);
+  background: #0d141d;
+  color: var(--ops-copy);
 }

@@ -1,0 +1,70 @@
+@use "bootstrap/scss/bootstrap" as * with (
+  $primary: #93bdf1,
+  $secondary: #25384d,
+  $info: #83b8ee,
+  $success: #66d9a6,
+  $dark: #0b1119,
+  $body-bg: #080c12,
+  $body-color: #d9e6f4,
+  $border-color: #263647,
+  $info-text-emphasis: #d5e9ff,
+  $success-text-emphasis: #b5f1d3
+);
+
+@use "includes/components/table";
+@use "includes/components/jumbotron";
+@use "includes/components/challenge";
+@use "includes/components/sticky-footer";
+@use "includes/components/graphs";
+
+@use "includes/utils/fonts";
+@use "includes/utils/opacity";
+@use "includes/utils/min-height";
+@use "includes/utils/cursors";
+@use "includes/utils/lolight";
+
+@use "includes/icons/award-icons";
+@use "includes/icons/flag-icons";
+
+@use "includes/components/orbital-interface";
+
+h1,
+h2 {
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+blockquote {
+  margin: 1rem 0;
+  padding: 1rem 1.25rem;
+  border: 0;
+  border-radius: 0.55rem;
+  background: var(--ops-panel);
+  color: var(--ops-copy);
+}
+
+input,
+select {
+  padding: 0.6rem !important;
+  height: auto !important;
+}
+
+.fa-spin.spinner {
+  text-align: center;
+  opacity: 0.5;
+}
+
+.badge-notification {
+  vertical-align: top;
+  margin-left: -1.5em;
+  font-size: 50%;
+}
+
+.form-select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e");
+  background-size: 8px 10px;
+}
