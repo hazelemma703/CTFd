@@ -24,6 +24,24 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v5
 
+      - name: Determine Docker image name
+        run: |
+          DOCKER_USER="${{ secrets.DOCKERHUB_USERNAME }}"
+          RAW_NAME="${{ secrets.IMAGE_NAME }}"
+          
+          if [ -z "$RAW_NAME" ]; then
+            TARGET="${DOCKER_USER}/ctfd"
+          elif [[ "$RAW_NAME" == *"/"* ]]; then
+            TARGET="$RAW_NAME"
+          else
+            TARGET="${DOCKER_USER}/${RAW_NAME}"
+          fi
+          
+          # Docker Hub requires lowercase repository names
+          TARGET_LOWER=$(echo "$TARGET" | tr '[:upper:]' '[:lower:]')
+          echo "IMAGE_TARGET=${TARGET_LOWER}" >> $GITHUB_ENV
+          echo "Target Docker image: ${TARGET_LOWER}"
+
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
@@ -32,7 +50,7 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            ${{ secrets.IMAGE_NAME || secrets.DOCKERHUB_REPO || format('{0}/ctfd', secrets.DOCKERHUB_USERNAME) }}
+            ${{ env.IMAGE_TARGET }}
           tags: |
             type=raw,value=latest,enable=${{ github.ref == 'refs/heads/master' }}
             type=ref,event=branch
